@@ -23,4 +23,9 @@ class Network
     main_characters
   end
 
+  def actors_by_show
+    @shows.reduce({}) do |actors, show|
+      actors.update(show=>show.characters.map{|character| character.actor})
+    end
+  end
 end
