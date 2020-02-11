@@ -28,4 +28,10 @@ class Network
       actors.update(show=>show.characters.map{|character| character.actor})
     end
   end
+
+  def shows_by_actor
+   ###
+  end
+
+
 end
